@@ -57,7 +57,7 @@ export default function Hero() {
       </ClientOnly>
 
       {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-8 pt-6 sm:py-16 sm:pt-12 lg:py-24 lg:pt-32">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-8 pt-6 sm:py-16 sm:pt-12 lg:py-16 lg:pt-8">
         {/* Portrait placeholder */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
