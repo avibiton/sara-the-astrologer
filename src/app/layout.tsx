@@ -5,6 +5,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import MobileBookingBar from '@/components/layout/MobileBookingBar';
 import ScrollToTop from '@/components/ui/ScrollToTop';
+import ScrollToTopOnNav from '@/components/ui/ScrollToTopOnNav';
 import { brand } from '@/data/brand';
 
 const cormorant = Cormorant_Garamond({
@@ -68,6 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Skip to main content
         </a>
+        <ScrollToTopOnNav />
         <Header />
         <main id="main-content">{children}</main>
         <MobileBookingBar />
