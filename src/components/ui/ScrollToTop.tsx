@@ -70,9 +70,10 @@ export default function ScrollToTop() {
       {/* Astrological arrow SVG */}
       <svg
         viewBox="0 0 24 24"
-        className="absolute inset-0 m-auto w-6 h-6"
+        width="24"
+        height="24"
         aria-hidden="true"
-        style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)', position: 'absolute' }}
+        style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
       >
         {/* Vertical shaft */}
         <line x1="12" y1="18" x2="12" y2="6" stroke="#CBAA68" strokeWidth="1.5" strokeLinecap="round" />
