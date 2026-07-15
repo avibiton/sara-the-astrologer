@@ -113,6 +113,18 @@ export default function Footer() {
             </Link>
           </div>
         </div>
+
+        {/* Dev credit */}
+        <div className="mt-6 text-center">
+          <p className="text-[#2A1E36] text-[10px] tracking-[0.15em]">
+            Crafted by{' '}
+            <span className="text-[#3A2D4A]">Bitcom Solutions</span>
+            {' '}·{' '}
+            <span className="italic" style={{ fontFamily: 'var(--font-cormorant), serif' }}>
+              Building digital constellations, one site at a time
+            </span>
+          </p>
+        </div>
       </div>
     </footer>
   );
