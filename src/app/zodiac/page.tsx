@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import StarField from '@/components/ui/StarField';
+import PageHero from '@/components/sections/PageHero';
 import BookingCTA from '@/components/sections/BookingCTA';
 import { zodiacSigns } from '@/data/zodiac';
 
@@ -28,18 +28,12 @@ const zodiacDates: Record<string, string> = {
 export default function ZodiacPage() {
   return (
     <>
-      <section className="relative py-32 bg-gradient-to-b from-[#090A1A] to-[#181126] overflow-hidden">
-        <StarField count={70} />
-        <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-[#CBAA68] tracking-[0.3em] uppercase text-xs mb-4">The Twelve Signs</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-[#F6F0E7] font-light mb-6" style={{ fontFamily: 'var(--font-cormorant), serif' }}>
-            Choose Your Zodiac Sign
-          </h1>
-          <p className="text-[#B8A8C7] text-lg leading-relaxed">
-            Each sign carries its own themes, patterns, and elemental energy. Select a sign to explore — or start with your sun, moon, or rising.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="The Twelve Signs"
+        title="Choose Your Zodiac Sign"
+        subtitle="Each sign carries its own themes, patterns, and elemental energy. Select a sign to explore — or start with your sun, moon, or rising."
+        starCount={70}
+      />
 
       <section className="py-20 bg-[#090A1A]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

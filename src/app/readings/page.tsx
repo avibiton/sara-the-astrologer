@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Clock, Monitor } from 'lucide-react';
 import CalendlyButton from '@/components/calendly/CalendlyButton';
-import StarField from '@/components/ui/StarField';
+import PageHero from '@/components/sections/PageHero';
 import BookingCTA from '@/components/sections/BookingCTA';
 import { services } from '@/data/services';
 
@@ -15,22 +15,12 @@ export const metadata: Metadata = {
 export default function ReadingsPage() {
   return (
     <>
-      <section className="relative py-32 bg-gradient-to-b from-[#090A1A] to-[#181126] overflow-hidden">
-        <StarField count={80} />
-        <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-[#CBAA68] tracking-[0.3em] uppercase text-xs mb-4">Work With Sara</p>
-          <h1
-            className="text-4xl md:text-5xl lg:text-6xl text-[#F6F0E7] font-light mb-6"
-            style={{ fontFamily: 'var(--font-cormorant), serif' }}
-          >
-            Astrology Readings
-          </h1>
-          <p className="text-[#B8A8C7] text-lg leading-relaxed">
-            Private one-on-one sessions exploring your chart, your patterns, your timing, and the
-            questions you&apos;re actually living with.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Work With Sara"
+        title="Astrology Readings"
+        subtitle="Private one-on-one sessions exploring your chart, your patterns, your timing, and the questions you're actually living with."
+        starCount={80}
+      />
 
       <section className="py-24 bg-[#090A1A]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">

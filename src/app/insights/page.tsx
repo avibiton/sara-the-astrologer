@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import StarField from '@/components/ui/StarField';
+import PageHero from '@/components/sections/PageHero';
 import BookingCTA from '@/components/sections/BookingCTA';
 import { insights } from '@/data/insights';
 
@@ -12,21 +12,11 @@ export const metadata: Metadata = {
 export default function InsightsPage() {
   return (
     <>
-      <section className="relative py-32 bg-gradient-to-b from-[#090A1A] to-[#181126] overflow-hidden">
-        <StarField count={60} />
-        <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-[#CBAA68] tracking-[0.3em] uppercase text-xs mb-4">Astrology Insights</p>
-          <h1
-            className="text-4xl md:text-5xl lg:text-6xl text-[#F6F0E7] font-light mb-6"
-            style={{ fontFamily: 'var(--font-cormorant), serif' }}
-          >
-            Celestial Perspectives for Real Life
-          </h1>
-          <p className="text-[#B8A8C7] text-lg leading-relaxed">
-            Original articles exploring astrology topics — patterns, timing, relationships, and the space where fate meets free will.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Astrology Insights"
+        title="Celestial Perspectives for Real Life"
+        subtitle="Original articles exploring astrology topics — patterns, timing, relationships, and the space where fate meets free will."
+      />
 
       <section className="py-24 bg-[#090A1A]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

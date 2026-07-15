@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import CalendlyButton from '@/components/calendly/CalendlyButton';
-import StarField from '@/components/ui/StarField';
+import PageHero from '@/components/sections/PageHero';
 import BookingCTA from '@/components/sections/BookingCTA';
 import { brand } from '@/data/brand';
 
@@ -17,23 +17,12 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative py-32 bg-gradient-to-b from-[#090A1A] to-[#181126] overflow-hidden">
-        <StarField count={80} />
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-[#CBAA68] tracking-[0.3em] uppercase text-xs mb-4">Meet Sara Wigle</p>
-          <h1
-            className="text-4xl md:text-5xl lg:text-6xl text-[#F6F0E7] font-light mb-6"
-            style={{ fontFamily: 'var(--font-cormorant), serif' }}
-          >
-            The Astrologer Behind the Insights
-          </h1>
-          <p className="text-[#B8A8C7] text-lg max-w-2xl mx-auto leading-relaxed">
-            An intuitive astrologer whose work begins with a simple belief: the chart reveals
-            patterns, and what you do with those patterns is always yours to decide.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Meet Sara Wigle"
+        title="The Astrologer Behind the Insights"
+        subtitle="An intuitive astrologer whose work begins with a simple belief: the chart reveals patterns, and what you do with those patterns is always yours to decide."
+        starCount={80}
+      />
 
       {/* About content */}
       <section className="py-24 bg-[#090A1A]">

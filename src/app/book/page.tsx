@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import StarField from '@/components/ui/StarField';
+import PageHero from '@/components/sections/PageHero';
 import CalendlyEmbed from '@/components/calendly/CalendlyEmbed';
 import { services } from '@/data/services';
 import Link from 'next/link';
@@ -12,18 +12,12 @@ export const metadata: Metadata = {
 export default function BookPage() {
   return (
     <>
-      <section className="relative py-24 bg-gradient-to-b from-[#090A1A] to-[#181126] overflow-hidden">
-        <StarField count={50} />
-        <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-[#CBAA68] tracking-[0.3em] uppercase text-xs mb-4">Begin Here</p>
-          <h1 className="text-4xl md:text-5xl text-[#F6F0E7] font-light mb-4" style={{ fontFamily: 'var(--font-cormorant), serif' }}>
-            Book a Session With Sara
-          </h1>
-          <p className="text-[#B8A8C7] leading-relaxed">
-            Choose a date and time below. You&apos;ll receive all session details and meeting instructions in your confirmation email.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Begin Here"
+        title="Book a Session With Sara"
+        subtitle="Choose a date and time below. You'll receive all session details and meeting instructions in your confirmation email."
+        starCount={50}
+      />
 
       <section className="py-12 bg-[#090A1A]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

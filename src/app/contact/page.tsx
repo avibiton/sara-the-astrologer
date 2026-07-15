@@ -4,7 +4,7 @@ import InstagramIcon from '@/components/ui/InstagramIcon';
 import { useState } from 'react';
 import { Mail } from 'lucide-react';
 import Link from 'next/link';
-import StarField from '@/components/ui/StarField';
+import PageHero from '@/components/sections/PageHero';
 import { brand } from '@/data/brand';
 import { services } from '@/data/services';
 import { trackEvent } from '@/lib/analytics';
@@ -29,18 +29,11 @@ export default function ContactPage() {
 
   return (
     <>
-      <section className="relative py-32 bg-gradient-to-b from-[#090A1A] to-[#181126] overflow-hidden">
-        <StarField count={60} />
-        <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-[#CBAA68] tracking-[0.3em] uppercase text-xs mb-4">Get in Touch</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-[#F6F0E7] font-light mb-6" style={{ fontFamily: 'var(--font-cormorant), serif' }}>
-            Contact Sara
-          </h1>
-          <p className="text-[#B8A8C7] text-lg leading-relaxed">
-            Have a question before booking? Reach out below.
-          </p>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Get in Touch"
+        title="Contact Sara"
+        subtitle="Have a question before booking? Reach out below."
+      />
 
       <section className="py-24 bg-[#090A1A]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-12">
