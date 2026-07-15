@@ -29,7 +29,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Portrait */}
-            <div className="flex items-center justify-center sticky top-24">
+            <div className="flex items-center justify-center lg:sticky lg:top-24">
               <div className="relative w-full max-w-sm">
                 <div className="aspect-[3/4] relative overflow-hidden border border-[#CBAA68]/15">
                   <Image
