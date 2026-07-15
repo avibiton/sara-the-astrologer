@@ -118,7 +118,7 @@ export default function Footer() {
         <div className="mt-6 text-center">
           <p className="text-[#2A1E36] text-[10px] tracking-[0.15em]">
             Crafted by{' '}
-            <span className="text-[#3A2D4A]">Bitcom Solutions</span>
+            <a href="https://bitcomsolutions.com" target="_blank" rel="noopener noreferrer" className="text-[#3A2D4A] hover:text-[#6B5A80] transition-colors">Bitcom Solutions</a>
             {' '}·{' '}
             <span className="italic" style={{ fontFamily: 'var(--font-cormorant), serif' }}>
               Building digital constellations, one site at a time
