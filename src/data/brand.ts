@@ -8,7 +8,7 @@ export const brand = {
   instagramUrl: 'https://www.instagram.com/sara_the_astrologer/',
   instagramHandle: '@sara_the_astrologer',
   instagramUsername: 'sara_the_astrologer',
-  calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL || 'https://calendly.com/sara-the-astrologer',
+  calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL || 'https://calendly.com/sara-the-astrologer/60min',
   // Edit these when Sara confirms contact details
   email: process.env.NEXT_PUBLIC_EMAIL || '',
   phone: process.env.NEXT_PUBLIC_PHONE || '',
