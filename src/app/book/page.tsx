@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import PageHero from '@/components/sections/PageHero';
 import CalendlyEmbed from '@/components/calendly/CalendlyEmbed';
+import { brand } from '@/data/brand';
 import { services } from '@/data/services';
 import Link from 'next/link';
 
@@ -46,7 +47,7 @@ export default function BookPage() {
           <p className="text-center text-[#3A2D4A] text-xs mt-6">
             Can&apos;t see the calendar?{' '}
             <a
-              href={process.env.NEXT_PUBLIC_CALENDLY_URL || 'https://calendly.com'}
+              href={brand.calendlyUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#CBAA68] hover:underline"
