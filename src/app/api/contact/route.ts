@@ -58,6 +58,48 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Failed to send email' }, { status: 500 });
     }
 
+    // Confirmation email to the visitor
+    const confirmationHtml = `
+      <div style="font-family: Georgia, serif; max-width: 600px; margin: 0 auto; color: #1a1a2e; background: #090A1A; padding: 40px 32px;">
+        <div style="text-align: center; margin-bottom: 32px;">
+          <p style="color: #CBAA68; letter-spacing: 4px; font-size: 11px; text-transform: uppercase; margin: 0 0 12px;">Sara the Astrologer</p>
+          <h1 style="color: #F6F0E7; font-size: 28px; font-weight: 300; margin: 0; line-height: 1.3;">Your message has been received</h1>
+        </div>
+        <div style="border-top: 1px solid rgba(203,170,104,0.2); border-bottom: 1px solid rgba(203,170,104,0.2); padding: 24px 0; margin-bottom: 28px;">
+          <p style="color: #B8A8C7; line-height: 1.7; margin: 0;">
+            Hi ${name},<br><br>
+            Thank you for reaching out. Sara has received your message and will be in touch with you soon.
+          </p>
+        </div>
+        <p style="color: #6B5A80; font-size: 13px; line-height: 1.7; margin: 0 0 24px;">
+          In the meantime, you're welcome to explore Sara's readings and insights at
+          <a href="https://saratheastrologer.com" style="color: #CBAA68; text-decoration: none;">saratheastrologer.com</a>,
+          or follow along on Instagram at
+          <a href="https://www.instagram.com/sara_the_astrologer/" style="color: #CBAA68; text-decoration: none;">@sara_the_astrologer</a>.
+        </p>
+        <div style="text-align: center; margin-top: 32px;">
+          <a href="https://calendly.com/sara-the-astrologer/60min" style="display: inline-block; padding: 12px 32px; background: linear-gradient(135deg, #CBAA68, #E2C88C); color: #090A1A; text-decoration: none; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; font-weight: 600;">Book a Session</a>
+        </div>
+        <p style="color: #3A2D4A; font-size: 11px; text-align: center; margin-top: 32px;">
+          © ${new Date().getFullYear()} Sara the Astrologer · Sara Wigle
+        </p>
+      </div>
+    `;
+
+    await fetch('https://api.brevo.com/v3/smtp/email', {
+      method: 'POST',
+      headers: {
+        'api-key': process.env.BREVO_API_KEY!,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        sender: { name: 'Sara the Astrologer', email: 'no-reply@saratheastrologer.com' },
+        to: [{ email, name }],
+        subject: 'Your message has been received — Sara the Astrologer',
+        htmlContent: confirmationHtml,
+      }),
+    });
+
     return NextResponse.json({ success: true });
   } catch (err) {
     console.error('Contact route error:', err);
