@@ -20,11 +20,23 @@ export default function ContactPage() {
     e.preventDefault();
     setLoading(true);
     trackEvent('contact_form_submitted');
-    // TODO: Connect to Resend / Brevo / Formspree
-    // Replace with your chosen email provider API route
-    await new Promise((r) => setTimeout(r, 800));
-    setLoading(false);
-    setSubmitted(true);
+
+    const form = e.currentTarget;
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error('Send failed');
+      setSubmitted(true);
+    } catch {
+      alert('Something went wrong. Please try again or reach out directly on Instagram.');
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
