@@ -3,14 +3,14 @@ import type { Service } from '@/types';
 export const services: Service[] = [
   {
     id: 'birth-chart',
-    name: 'Birth Chart Reading',
+    name: 'Natal Chart Reading',
     slug: 'birth-chart',
     icon: '☽',
     tagline: 'Your cosmic blueprint, fully explored.',
     description:
       'A deep dive into your natal chart — the unique map of the sky at the exact moment you were born. Together we explore your core patterns, strengths, recurring themes, and the areas of life calling for your attention.',
-    duration: '[Duration — placeholder for Sara to fill in]',
-    price: '[Price — placeholder for Sara to confirm]',
+    duration: '1 hour',
+    price: '$234',
     format: 'Online via video call',
     calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL,
     forWhom:
@@ -45,14 +45,14 @@ export const services: Service[] = [
   },
   {
     id: 'relationship',
-    name: 'Relationship Reading',
+    name: 'Partnership (Synastry) Reading',
     slug: 'relationship',
     icon: '♀',
     tagline: 'Understand the patterns between you.',
     description:
       'Explore the astrological dynamics at play between you and another person — whether a partner, family member, or close friend. A relationship reading can illuminate why you connect the way you do, where friction arises, and how to navigate it with more awareness.',
-    duration: '[Duration — placeholder for Sara to fill in]',
-    price: '[Price — placeholder for Sara to confirm]',
+    duration: '45 minutes',
+    price: '$180',
     format: 'Online via video call',
     calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL,
     forWhom:
@@ -89,8 +89,8 @@ export const services: Service[] = [
     tagline: 'What\'s moving in your life right now.',
     description:
       'A transit reading looks at how current and upcoming planetary movements are interacting with your natal chart. This is a session about timing — understanding what\'s being activated in your life and how to work with it rather than against it.',
-    duration: '[Duration — placeholder for Sara to fill in]',
-    price: '[Price — placeholder for Sara to confirm]',
+    duration: '30 minutes',
+    price: '$111',
     format: 'Online via video call',
     calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL,
     forWhom:
@@ -115,14 +115,14 @@ export const services: Service[] = [
   },
   {
     id: 'year-ahead',
-    name: 'Year-Ahead Reading',
+    name: 'Year Ahead Reading',
     slug: 'year-ahead',
     icon: '☉',
     tagline: 'A clear view of what\'s unfolding.',
     description:
-      'A comprehensive look at the astrological themes, key transits, and timing windows shaping the year ahead for you. Ideal around your birthday or at the start of a new chapter, this session helps you approach the coming months with intention and awareness.',
-    duration: '[Duration — placeholder for Sara to fill in]',
-    price: '[Price — placeholder for Sara to confirm]',
+      'This reading uses your progressed chart, Solar Return chart, and Annual Profections to explore the themes and timing of your year ahead. Rather than making fixed predictions, I use traditional timing techniques to understand the overall "weather" of the year and the key themes likely to emerge.',
+    duration: '45 minutes',
+    price: '$198',
     format: 'Online via video call',
     calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL,
     forWhom:
@@ -150,8 +150,8 @@ export const services: Service[] = [
     tagline: 'Continue the conversation.',
     description:
       'For returning clients who want to revisit their chart, check in on current transits, or explore a specific question that has emerged since their last reading. A focused, shorter session designed for ongoing astrological support.',
-    duration: '[Duration — placeholder for Sara to fill in]',
-    price: '[Price — placeholder for Sara to confirm]',
+    duration: '30 minutes',
+    price: '$111',
     format: 'Online via video call',
     calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL,
     forWhom: 'Returning clients who have already had an initial reading with Sara.',

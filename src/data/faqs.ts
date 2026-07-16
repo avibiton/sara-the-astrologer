@@ -41,7 +41,7 @@ export const faqs: FAQ[] = [
     id: '7',
     question: 'How long does a session last?',
     answer:
-      '[Sara to confirm session durations for each offering. Duration varies by session type.]',
+      'Sessions range from 30 minutes to 1 hour, depending on the service you choose. Natal Chart Readings are 1 hour, Partnership and Year Ahead Readings are 45 minutes, and Transit Readings and Follow-Up Sessions are 30 minutes.',
   },
   {
     id: '8',
@@ -57,20 +57,20 @@ export const faqs: FAQ[] = [
   },
   {
     id: '10',
-    question: 'What happens after I schedule?',
+    question: 'What happens after I book a session?',
     answer:
-      "After booking through Calendly, you'll receive a confirmation with your session details and any information needed to join. [Sara to confirm whether a pre-session intake form or chart submission is part of her process.]",
+      "When booking through Calendly, you'll be asked to provide your birth date, exact birth time, and birthplace. You'll also have the opportunity to include any specific questions or areas you'd like to focus on during your session.",
   },
   {
     id: '11',
     question: 'How do I reschedule or cancel?',
     answer:
-      '[Sara to confirm her rescheduling and cancellation policy. This information will be added here and included in Calendly confirmation details.]',
+      'You can reschedule or cancel your appointment directly through Calendly up to 24 hours before your scheduled session. Cancellations made within 24 hours of the appointment are non-refundable.',
   },
   {
     id: '12',
     question: 'Are sessions recorded?',
     answer:
-      '[Sara to confirm whether sessions are recorded and if recordings are shared with clients.]',
+      'No. I do not record sessions, but you are welcome to record the session yourself if you\'d like to listen back later.',
   },
 ];

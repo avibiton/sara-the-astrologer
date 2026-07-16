@@ -62,55 +62,27 @@ export default function AboutPage() {
                   Where Fate Meets Free Will
                 </h2>
                 <p className="text-[#B8A8C7] leading-relaxed mb-4">
-                  Sara Wigle is an intuitive astrologer offering private one-on-one sessions online.
-                  Her work is grounded in the positioning that fate and free will are not opposites —
-                  they are in ongoing conversation, and astrology is one of the most powerful tools for
-                  understanding how that conversation plays out in a real life.
+                  Raised in the San Francisco Bay Area and now based in New York, my fascination with astrology began at the age of 14 when a close friend gave me a book about the zodiac signs. What started as simple curiosity quickly became a lifelong passion. I found myself constantly recognizing patterns in people, relationships, and life events, and I wanted to understand why those patterns existed.
                 </p>
                 <p className="text-[#B8A8C7] leading-relaxed mb-4">
-                  [
-                  <em className="text-[#4A3D5C] not-italic">
-                    Full biography to be added here. Please update this file with Sara&apos;s actual story,
-                    training, background, and approach using her verified public content.
-                  </em>
-                  ]
+                  Before becoming a full-time astrologer, I spent many years working in creative fields, including interior design. Creativity has always been at the center of who I am, but my greatest passion has always been understanding people. Alongside astrology, I developed a deep interest in psychology, particularly the work of Carl Jung and the symbolic language of the unconscious. Today, my sessions combine both disciplines, using astrology as a psychological map to help people better understand themselves, their relationships, and the different seasons of their lives.
+                </p>
+                <p className="text-[#B8A8C7] leading-relaxed mb-4">
+                  Judaism is also a central part of my life and my work. I practice astrology through a Jewish lens and strive to ensure my approach remains aligned with Torah values. I often incorporate Jewish teachings, Kabbalistic ideas, and timeless wisdom into my sessions, helping clients understand astrology not as something mystical or deterministic, but as a tool for self-awareness and personal growth. To me, astrology is part of the language of creation — a symbolic system that reflects the order of the universe established by God. It is not something to worship or blindly follow, but something to use wisely, with humility and discernment.
                 </p>
 
                 <h3
                   className="text-xl text-[#E2C88C] mt-8 mb-3 font-light"
                   style={{ fontFamily: 'var(--font-cormorant), serif' }}
                 >
-                  Sara&apos;s Approach
+                  My Approach
                 </h3>
                 <p className="text-[#B8A8C7] leading-relaxed mb-4">
-                  Sessions with Sara are built around your actual questions, not a scripted tour of
-                  astrological theory. The chart is the starting point — your life is the conversation.
-                  Sara brings genuine attunement and clear language to what can sometimes feel like an
-                  overwhelming amount of information.
+                  My approach is educational, practical, and deeply personal. I want every client to leave with not only a better understanding of their birth chart and current transits, but also a deeper understanding of themselves. Throughout each session, I explain what I&apos;m seeing and why, so astrology becomes something you can understand and apply in your own life.
                 </p>
                 <p className="text-[#B8A8C7] leading-relaxed mb-4">
-                  The goal is always insight you can actually use — perspective that helps you
-                  understand what&apos;s in motion, what tends to repeat, what&apos;s being called forward right
-                  now — and what you might do with any of that.
+                  For me, astrology has never been about predicting a fixed destiny. It is a tool that reveals patterns, timing, strengths, and challenges so we can make more conscious choices. It has transformed my own life, and I feel incredibly grateful to share that perspective with others.
                 </p>
-
-                {/* Editable fields */}
-                <div className="mt-8 border border-[#CBAA68]/10 p-6 bg-[#0D0D1F] space-y-4">
-                  <p className="text-[#4A3D5C] text-xs tracking-widest uppercase">Placeholder Fields — Edit in src/app/about/page.tsx</p>
-                  {[
-                    'Training & Education',
-                    'Qualifications & Certifications',
-                    'Years of Study',
-                    'Specialties',
-                    'Session Format',
-                    'Languages',
-                  ].map((field) => (
-                    <div key={field}>
-                      <p className="text-[#CBAA68] text-xs tracking-widest uppercase mb-1">{field}</p>
-                      <p className="text-[#2A1E36] text-sm">[{field} — to be confirmed by Sara]</p>
-                    </div>
-                  ))}
-                </div>
               </div>
 
               <div className="flex flex-wrap gap-4 mt-10">
