@@ -32,6 +32,7 @@ export interface ZodiacSign {
 export interface Testimonial {
   id: string;
   name: string;
+  location?: string;
   service?: string;
   text: string;
   date?: string;
