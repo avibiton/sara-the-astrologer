@@ -141,7 +141,7 @@ export default async function ServicePage({ params }: Props) {
                 </div>
                 <div>
                   <p className="text-[#4A3D5C] text-[10px] tracking-widest uppercase mb-1">Cancellation Policy</p>
-                  <p className="text-[#B8A8C7] text-xs">[Sara to confirm policy]</p>
+                  <p className="text-[#B8A8C7] text-xs">Cancellations within 24 hours of your session are non-refundable. Rescheduling with 24+ hours notice is always welcome.</p>
                 </div>
               </div>
               <CalendlyButton

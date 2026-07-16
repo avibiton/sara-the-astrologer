@@ -35,7 +35,7 @@ export const faqs: FAQ[] = [
     id: '6',
     question: 'Are sessions available online?',
     answer:
-      'Yes — Sara offers sessions online. When you book through Calendly, you\'ll receive all the information you need to join your session. [Sara to confirm the platform used — Zoom, Google Meet, etc.]',
+      'Yes — Sara offers sessions online via FaceTime or WhatsApp video call. When you book through Calendly, Sara will be in touch to confirm which platform works best for you.',
   },
   {
     id: '7',

@@ -9,8 +9,7 @@ export const brand = {
   instagramHandle: '@sara_the_astrologer',
   instagramUsername: 'sara_the_astrologer',
   calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL || 'https://calendly.com/sara-the-astrologer/60min',
-  // Edit these when Sara confirms contact details
-  email: process.env.NEXT_PUBLIC_EMAIL || '',
+  email: process.env.NEXT_PUBLIC_EMAIL || 'sara.the.astrologer@gmail.com',
   phone: process.env.NEXT_PUBLIC_PHONE || '',
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://saratheAstrologer.com',
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://saratheastrologer.com',
 };

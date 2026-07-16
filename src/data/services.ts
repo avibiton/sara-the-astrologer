@@ -39,7 +39,7 @@ export const services: Service[] = [
       },
       {
         q: 'Is this session recorded?',
-        a: '[Sara to confirm recording policy]',
+        a: 'Sessions are not recorded. If you would like to take notes during your reading, you are welcome to do so.',
       },
     ],
   },

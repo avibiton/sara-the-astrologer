@@ -63,9 +63,6 @@ export default function ContactPage() {
                 className="flex items-center gap-2 text-[#B8A8C7] hover:text-[#E2C88C] text-sm transition-colors">
                 <InstagramIcon size={14} className="text-[#CBAA68]" />{brand.instagramHandle}
               </Link>
-              {!brand.email && !brand.phone && (
-                <p className="text-[#3A2D4A] text-xs mt-3">[Contact details — to be added by Sara]</p>
-              )}
             </div>
             <div className="border border-[#CBAA68]/15 bg-[#0D0D1F] p-6">
               <h3 className="text-[#E2C88C] mb-3 text-lg" style={{ fontFamily: 'var(--font-cormorant), serif' }}>Ready to Book?</h3>
