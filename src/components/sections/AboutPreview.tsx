@@ -2,6 +2,7 @@
 import InstagramIcon from '@/components/ui/InstagramIcon';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 
 import CalendlyButton from '@/components/calendly/CalendlyButton';
@@ -82,19 +83,18 @@ export default function AboutPreview() {
             transition={{ duration: 0.8 }}
             className="flex items-center justify-center"
           >
-            <div className="relative w-80 h-96 border border-[#CBAA68]/15 bg-[#0D0D1F] flex flex-col items-center justify-center gap-4 shadow-[0_0_60px_rgba(203,170,104,0.08)]">
-              {/* Replace with Sara's approved photo — Next.js Image component */}
-              <span className="text-5xl text-[#CBAA68]/20" aria-hidden="true">✦</span>
-              <p className="text-[#3A2D4A] text-xs tracking-[0.2em] uppercase">Photo Placeholder</p>
-              <p className="text-[#2A1E36] text-[10px] text-center max-w-48 leading-relaxed">
-                Add Sara&apos;s approved portrait to{' '}
-                <span className="text-[#4A3D5C]">/public/images/sara-portrait.jpg</span>
-              </p>
-              {/* Gold corner accents */}
-              <span className="absolute top-3 left-3 w-5 h-5 border-t border-l border-[#CBAA68]/30" aria-hidden="true" />
-              <span className="absolute top-3 right-3 w-5 h-5 border-t border-r border-[#CBAA68]/30" aria-hidden="true" />
-              <span className="absolute bottom-3 left-3 w-5 h-5 border-b border-l border-[#CBAA68]/30" aria-hidden="true" />
-              <span className="absolute bottom-3 right-3 w-5 h-5 border-b border-r border-[#CBAA68]/30" aria-hidden="true" />
+            <div className="relative w-80 h-96 border border-[#CBAA68]/15 overflow-hidden shadow-[0_0_60px_rgba(203,170,104,0.08)]">
+              <Image
+                src="/images/sara_about.png"
+                alt="Sara Wigle — Intuitive Astrologer"
+                fill
+                className="object-cover object-top"
+                sizes="320px"
+              />
+              <span className="absolute top-3 left-3 w-5 h-5 border-t border-l border-[#CBAA68]/30 z-10" aria-hidden="true" />
+              <span className="absolute top-3 right-3 w-5 h-5 border-t border-r border-[#CBAA68]/30 z-10" aria-hidden="true" />
+              <span className="absolute bottom-3 left-3 w-5 h-5 border-b border-l border-[#CBAA68]/30 z-10" aria-hidden="true" />
+              <span className="absolute bottom-3 right-3 w-5 h-5 border-b border-r border-[#CBAA68]/30 z-10" aria-hidden="true" />
             </div>
           </motion.div>
         </div>

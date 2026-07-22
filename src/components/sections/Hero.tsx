@@ -66,7 +66,7 @@ export default function Hero() {
           className="mx-auto mb-8 w-28 h-28 rounded-full border-2 border-[#CBAA68]/40 shadow-[0_0_40px_rgba(203,170,104,0.2)] overflow-hidden"
         >
           <Image
-            src="/images/sara-wigle.jpg"
+            src="/images/sara_about.png"
             alt="Sara Wigle — Intuitive Astrologer"
             width={112}
             height={112}
