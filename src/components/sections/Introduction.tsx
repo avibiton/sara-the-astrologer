@@ -37,7 +37,7 @@ export default function Introduction() {
             {/* Sara's portrait */}
             <div className="relative z-10 w-72 h-72 md:w-96 md:h-96 rounded-full border border-[#CBAA68]/20 shadow-[0_0_60px_rgba(203,170,104,0.15)] overflow-hidden">
               <Image
-                src="/images/sara-wigle.jpg"
+                src="/images/sara_about.png"
                 alt="Sara Wigle — Intuitive Astrologer"
                 fill
                 className="object-cover object-cover"
