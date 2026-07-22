@@ -32,18 +32,13 @@ export default function AboutPreview() {
               The Astrologer Behind the Insights
             </h2>
             <p className="text-[#B8A8C7] leading-relaxed mb-4">
-              Sara Wigle is an intuitive astrologer whose work is rooted in the belief that the
-              stars reveal patterns — and that what you do with those patterns is always yours to
-              decide. Her sessions bring astrological insight into conversation with real-life
-              questions, without pretending the chart predicts what can&apos;t be predicted.
+              Enter a grounded, soul-centered space where Jewish wisdom, intuitive astrology, and depth psychology come together. These one-on-one sessions offer a unique blend of Torah-aligned astrology, Kabbalistic insight, and the teachings of Carl Jung — illuminating the patterns and potentials woven into your inner and outer world.
             </p>
             <p className="text-[#B8A8C7] leading-relaxed mb-4">
-              [
-              <em className="text-[#4A3D5C]">
-                Sara&apos;s full biography, training, qualifications, and personal story to be added here.
-                Please update <code className="text-[#CBAA68] not-italic text-xs">src/components/sections/AboutPreview.tsx</code> with verified content.
-              </em>
-              ]
+              We&apos;ll explore your natal chart through a spiritual and psychological lens, uncovering your strengths, challenges, timing windows, and soul themes. This work is not about prediction, but about self-awareness, meaning, and alignment with your higher purpose.
+            </p>
+            <p className="text-[#B8A8C7] leading-relaxed mb-4">
+              If you&apos;re navigating change, seeking clarity, or wanting to understand yourself more deeply, this session offers a powerful, Jewish-rooted path to insight and growth. Please have your birth date, exact time, and location ready — and send this information when you book your session.
             </p>
             <p
               className="text-[#CBAA68]/70 text-lg italic mb-8"
