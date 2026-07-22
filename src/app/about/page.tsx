@@ -11,7 +11,7 @@ import { brand } from '@/data/brand';
 export const metadata: Metadata = {
   title: 'About Sara Wigle',
   description:
-    'Meet Sara Wigle — the intuitive astrologer behind Sara the Astrologer. Learn about her approach, philosophy, and how she works with clients.',
+    'Meet Sara Wigle — an intuitive astrologer whose sessions weave together Jewish wisdom, Torah-aligned astrology, Kabbalistic insight, and Jungian depth psychology.',
 };
 
 export default function AboutPage() {
@@ -20,7 +20,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="Meet Sara Wigle"
         title="The Astrologer Behind the Insights"
-        subtitle="An intuitive astrologer whose work begins with a simple belief: the chart reveals patterns, and what you do with those patterns is always yours to decide."
+        subtitle="Where Jewish wisdom, intuitive astrology, and depth psychology come together — illuminating the patterns woven into your inner and outer world."
         starCount={80}
       />
 
@@ -62,26 +62,29 @@ export default function AboutPage() {
                   Where Fate Meets Free Will
                 </h2>
                 <p className="text-[#B8A8C7] leading-relaxed mb-4">
-                  Raised in the San Francisco Bay Area and now based in New York, my fascination with astrology began at the age of 14 when a close friend gave me a book about the zodiac signs. What started as simple curiosity quickly became a lifelong passion. I found myself constantly recognizing patterns in people, relationships, and life events, and I wanted to understand why those patterns existed.
+                  Raised in the San Francisco Bay Area and now based in New York, my fascination with astrology began at the age of 14 when a close friend gave me a book about the zodiac signs. What started as simple curiosity quickly became a lifelong passion. I found myself constantly recognizing patterns in people, relationships, and life events — and I wanted to understand why those patterns existed.
                 </p>
                 <p className="text-[#B8A8C7] leading-relaxed mb-4">
-                  Before becoming a full-time astrologer, I spent many years working in creative fields, including interior design. Creativity has always been at the center of who I am, but my greatest passion has always been understanding people. Alongside astrology, I developed a deep interest in psychology, particularly the work of Carl Jung and the symbolic language of the unconscious. Today, my sessions combine both disciplines, using astrology as a psychological map to help people better understand themselves, their relationships, and the different seasons of their lives.
+                  Before becoming a full-time astrologer, I spent many years working in creative fields, including interior design. But my greatest passion has always been understanding people. Alongside astrology, I developed a deep interest in psychology — particularly the work of Carl Jung and the symbolic language of the unconscious. Today, my sessions bring together astrology, depth psychology, and Jewish wisdom, using the natal chart as a spiritual and psychological map to help clients understand themselves, their relationships, and the different seasons of their lives.
                 </p>
                 <p className="text-[#B8A8C7] leading-relaxed mb-4">
-                  Judaism is also a central part of my life and my work. I practice astrology through a Jewish lens and strive to ensure my approach remains aligned with Torah values. I often incorporate Jewish teachings, Kabbalistic ideas, and timeless wisdom into my sessions, helping clients understand astrology not as something mystical or deterministic, but as a tool for self-awareness and personal growth. To me, astrology is part of the language of creation — a symbolic system that reflects the order of the universe established by God. It is not something to worship or blindly follow, but something to use wisely, with humility and discernment.
+                  Judaism is central to my life and to this work. I practice astrology through a Jewish lens, grounded in Torah values and enriched by Kabbalistic insight. To me, astrology is part of the language of creation — a symbolic system that reflects the divine order of the universe. It is not something to worship or blindly follow, but something to engage wisely, with humility and discernment. My sessions are a grounded, soul-centered space where Torah-aligned astrology, Kabbalistic ideas, and Jungian depth psychology meet to illuminate the patterns woven into your inner and outer world.
                 </p>
 
                 <h3
                   className="text-xl text-[#E2C88C] mt-8 mb-3 font-light"
                   style={{ fontFamily: 'var(--font-cormorant), serif' }}
                 >
-                  My Approach
+                  What to Expect
                 </h3>
                 <p className="text-[#B8A8C7] leading-relaxed mb-4">
-                  My approach is educational, practical, and deeply personal. I want every client to leave with not only a better understanding of their birth chart and current transits, but also a deeper understanding of themselves. Throughout each session, I explain what I&apos;m seeing and why, so astrology becomes something you can understand and apply in your own life.
+                  In a session, we explore your natal chart through a spiritual and psychological lens — uncovering your strengths, challenges, timing windows, and soul themes. This work is not about prediction. It is about self-awareness, meaning, and alignment with your higher purpose.
                 </p>
                 <p className="text-[#B8A8C7] leading-relaxed mb-4">
-                  For me, astrology has never been about predicting a fixed destiny. It is a tool that reveals patterns, timing, strengths, and challenges so we can make more conscious choices. It has transformed my own life, and I feel incredibly grateful to share that perspective with others.
+                  My approach is educational, practical, and deeply personal. I explain what I&apos;m seeing and why, so astrology becomes something you can understand and apply in your own life. If you&apos;re navigating change, seeking clarity, or wanting to understand yourself more deeply, this is a powerful, Jewish-rooted path to insight and growth.
+                </p>
+                <p className="text-[#B8A8C7] leading-relaxed mb-4">
+                  Please have your birth date, exact time, and birth location ready — and send this information when you book your session.
                 </p>
               </div>
 
